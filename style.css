@@ -1,0 +1,58 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    background-color: #D5E1EF;
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero {
+    /* Code used to center the QR box according to the site's width and height. */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Code used to center the contents inside the hero div. */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+
+    border-radius: 30px;
+    background-color: white;
+}
+
+.qr-body {
+    /* Total width of the box and margin to add the white space around the image and text elements. */
+    max-width: 400px;
+    margin: 20px 20px 30px 20px;
+}
+
+.qr-image {
+    /* This part is likely unnecessary to keep but it changes the width and height of the img tag's container to match the image. */
+    width: 400px;
+    height: 400px;
+    
+}
+
+.qr-image img {
+    /* Code that manipulates the image width and adds rounded edges. */
+    width: 400px;
+    border-radius: 20px;
+}
+
+.qr-header, .qr-text {
+    /* I added padding around these to push the text closer towards the boxes center to match how the text is positioned in the task. */
+    padding: 0px 30px 0px 30px;
+}
+
+.qr-header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.qr-text {
+    font-size: 18px;
+    color: grey;
+}
